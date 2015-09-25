@@ -5,11 +5,13 @@
       <tr>
         <th>商品名</th>
         <th>値段</th>
+		<th>リンク</th>
       </tr>
       <% @rankings.each do |ranking| %>            
       <tr>            
         <td><%= ranking.name %></td>
         <td><%= ranking.price %></td>
+		<td><li><a href="<%= ranking.url%>">商品ページへ</a></li></td>
       </tr>
       <% end %>                    
     </table>          
