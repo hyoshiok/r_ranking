@@ -1,2 +1,2 @@
-require './hello'
+require './ranking'
 run Sinatra::Application
