@@ -4,6 +4,7 @@
 require 'sinatra'
 require 'rakuten_web_service'
 
+
 #参考: https://github.com/k2works/sinatra_rakuten_api
 
 get '/' do
