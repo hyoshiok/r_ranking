@@ -3,13 +3,15 @@
   <h1>40代男性 のランキングTOP 30</h1>
     <table class="table table-hover">
       <tr>
-        <th>商品名</th>
-        <th>値段</th>
+        <th width="60%">商品名</th>
+        <th width="10%">値段</th>
+		<th width="20%">リンク</th>
       </tr>
       <% @rankings.each do |ranking| %>            
       <tr>            
         <td><%= ranking.name %></td>
-        <td><%= ranking.price %></td>
+        <td align="center"><%= ranking.price %></td>
+		<td align="center"><a href="<%= ranking.url%>">商品ページへ</a></td>
       </tr>
       <% end %>                    
     </table>          
